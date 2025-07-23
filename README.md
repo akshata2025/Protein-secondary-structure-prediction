@@ -18,10 +18,12 @@ CNN performs better than traditional ML models (LogReg, KNN), suggesting it capt
 KNN has the lowest accuracy, indicating it's not well-suited for high-dimensional, complex biosequence data like proteins.
 
 ROC-AUC Scores
+
 Random Forest generalizes best across all classes (C = Coil, E = β-strand, H = α-helix).
 CNN shows better discrimination than traditional models, highlighting its deep learning advantage.
 
 Class-wise Performance (Precision, Recall, F1-score)
+
 1. Random Forest
 High recall for class C (0.87) and precision for class E (0.85).
 Balanced F1-scores around 0.77 overall.
@@ -39,7 +41,11 @@ Moderate performance across all classes.
 Better recall for C and H than E.
 
 Confusion Matrices
+
 Random Forest: Mostly correct predictions along the diagonal. Some confusion between C & H and E & C.
+
 CNN: More balanced than others. Slight confusion between E and C.
+
 Logistic Regression: Misclassifies many H and E as C.
+
 KNN: Most confusion, especially E misclassified as C and H.
